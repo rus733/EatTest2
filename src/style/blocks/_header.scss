@@ -1,0 +1,129 @@
+.header {
+  padding: 9px 0 15px 0;
+  &__wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+  }
+  &-search {
+    margin: 0 auto;
+    max-width: 620px;
+    width: 100%;
+    position: relative;
+    &__input {
+      width: 100%;
+      height: 49px;
+      border: none;
+      outline: none;
+      padding: 0 40px 0 20px;
+      background: rgba(238, 238, 238, 0.71);
+      border-radius: 10px;
+      position: relative;
+      font-size: 16px;
+    }
+    &__btn {
+      position: absolute;
+      right: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  &__buttons {
+    display: flex;
+  }
+  &__login {
+    width: 99px;
+    border-radius: 50px;
+    padding: 16px 30px;
+    background: #ebebeb;
+    font-size: 14px;
+    line-height: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+      color: #ffffff;
+      background-color: #f66a15;
+    }
+  }
+  &-cart {
+    width: 50px;
+    height: 50px;
+    margin-left: 31px;
+    background: #f66a15;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid transparent;
+    transition: background 0.3s border 0.3s fill 0.3s;
+    &__counter {
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      background-color: #ffaf19;
+      border-radius: 50%;
+      font-size: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-cart:hover {
+    background: #ffffff;
+    border: 2px solid #f66a15;
+  }
+  &-cart:hover svg > g path {
+    fill: #f66a15;
+  }
+}
+@media (max-width: 1230px) {
+}
+@media (max-width: 1022px) {
+  .header {
+    &-cart {
+      margin-left: 15px;
+    }
+  }
+}
+@media (max-width: 798px) {
+  .header {
+    &__wraper {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &-search {
+      order: 2;
+    }
+  }
+}
+@media (max-width: 606px) {
+  .header {
+    &__buttons {
+      justify-content: space-between;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .header {
+    &__wraper {
+      gap: 15px 0px;
+    }
+    &_logo {
+      width: 100px;
+      height: 40px;
+    }
+    &__buttons {
+      justify-content: space-between;
+      gap: 10px;
+    }
+    &-cart {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.swiper {
+  max-width: 1200px;
+  max-height: 430px;
+  &-button {
+    &-prev {
+      left: -150px;
+    }
+    &-next {
+      left: -40px;
+    }
+  }
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: '';
+}
+.swiper-button-next,
+.swiper-button-prev {
+  display: block;
+}
+
+@media (max-width: 1230px) {
+}
+@media (max-width: 1022px) {
+  .swiper {
+    &-button {
+      &-prev {
+        left: -110px;
+      }
+    }
+  }
+}
+@media (max-width: 798px) {
+}
+@media (max-width: 606px) {
+}

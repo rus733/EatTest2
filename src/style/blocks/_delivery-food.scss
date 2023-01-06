@@ -1,0 +1,106 @@
+.delivery {
+  padding: 60px 0 85px;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 35px;
+  }
+
+  &-item {
+    width: calc(25% - 26.3px);
+    height: 182px;
+    display: flex;
+    position: relative;
+    &__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 18px;
+      object-fit: cover;
+    }
+    &__text {
+      position: absolute;
+      top: 16px;
+      left: 10px;
+      border-radius: 30px;
+      padding: 5px 10px;
+      font-weight: 500;
+      font-size: 20px;
+      &_health {
+        background: #d0fd89;
+        color: #49494f;
+      }
+      &_veget {
+        background: #aebc41;
+        color: #ffffff;
+      }
+      &_meat {
+        background: #b86b78;
+        color: #ffffff;
+      }
+      &_bird {
+        background: #d68334;
+        color: #ffffff;
+      }
+      &_feesh {
+        background: #cd6255;
+        color: #ffffff;
+      }
+      &_child {
+        background: #fffdbf;
+        color: #49494f;
+      }
+      &_parent {
+        background: #f6fdc8;
+        color: #49494f;
+      }
+      &_holiday {
+        background: #fef7fe;
+        color: #49494f;
+      }
+    }
+  }
+}
+@media (max-width: 1230px) {
+  .delivery {
+    padding: 50px 0 60px;
+
+    &__items {
+      gap: 25px 30px;
+    }
+    &-item {
+      width: calc(25% - 22.5px);
+    }
+  }
+}
+@media (max-width: 1022px) {
+  .delivery {
+    padding: 30px 0 40px;
+    &-item {
+      width: calc(50% - 15px);
+      height: 200px;
+    }
+  }
+}
+@media (max-width: 798px) {
+  .delivery {
+    padding: 15px 0 20px;
+    &__items {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      gap: 0 15px;
+      overflow-x: scroll;
+      margin: auto;
+    }
+    &-item {
+      flex: 0 0 250px;
+      height: 250px;
+      &__text {
+        left: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 606px) {
+}

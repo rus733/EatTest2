@@ -1,0 +1,79 @@
+.advantages {
+  padding: 100px 0 200px 0;
+  &__cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+  }
+  &-card {
+    width: 25%;
+    min-height: 290px;
+    padding: 36px 23px 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    cursor: pointer;
+    &__img {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 36px auto;
+      display: block;
+      fill: #f37321;
+    }
+    &__title {
+      margin-bottom: 13px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 23px;
+    }
+    &__text {
+      max-width: 222px;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: #49494f;
+    }
+  }
+  &-card:hover,
+  &-card:hover &-card__text,
+  &-card:hover svg path {
+    background: #f37321;
+    color: #ffffff;
+    fill: #ffffff;
+  }
+}
+
+@media (max-width: 1230px) {
+  .advantages {
+    padding: 50px 0 100px 0;
+    &__cards {
+      gap: 0px 30px;
+    }
+  }
+}
+@media (max-width: 1022px) {
+  .advantages {
+    &__cards {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px 15px;
+    }
+    &-card {
+      width: calc(50% - 15px);
+    }
+  }
+}
+@media (max-width: 798px) {
+  .advantages {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 606px) {
+  .advantages {
+    &-card {
+      width: 100%;
+    }
+  }
+}
